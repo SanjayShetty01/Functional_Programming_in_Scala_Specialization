@@ -42,4 +42,10 @@ object Lists:
    * @return The largest element in `xs`
    * @throws java.util.NoSuchElementException if `xs` is an empty list
    */
-  def max(xs: List[Int]): Int = ???
+def max(xs: List[Int]): Int = {
+  xs match {
+  case Nil => throw new IllegalArgumentException("Empty list")
+  case List(x) => x
+  case x::xs => Math.max(x, max(xs))
+}
+}
