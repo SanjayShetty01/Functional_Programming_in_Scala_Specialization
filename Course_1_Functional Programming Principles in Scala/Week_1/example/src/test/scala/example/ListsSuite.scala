@@ -20,9 +20,9 @@ class ListsSuite extends munit.FunSuite:
     assert(1 + 1 == 2)
   }
 
-  test("one plus one is three (0pts)?") {
-    assert(1 + 1 == 3) // This assertion fails! Go ahead and fix it.
-  }
+  test("one plus two is three (0pts)?") {
+    assert(1 + 2 == 3) // This assertion fails! Go ahead and fix it.
+  } // fixed
 
   /**
    * One problem with the previous (failing) test is that munit will
@@ -31,8 +31,8 @@ class ListsSuite extends munit.FunSuite:
    *
    * {{{
    * ==> X example.ListSuite.one plus one is three (0pts)?  0.007s munit.FailException: /tmp/example/src/test/scala/example/ListSuite.scala:26 assertion failed
-   * 25:  test("one plus one is two (0pts)") {
-   * 26:      assert(1 + 1 == 3)
+   * 25:  test("one plus two is three (0pts)") {
+   * 26:      assert(1 + 2 == 3)
    * 27:  }
    * }}}
    *
@@ -43,7 +43,7 @@ class ListsSuite extends munit.FunSuite:
    * {{{
    * ==> X example.ListSuite.details why one plus one is not three (0pts)  0.006s munit.FailException: /tmp/example/src/test/scala/example/ListSuite.scala:72
    * 71:  test("details why one plus one is not three (0pts)") {
-   * 72:      assertEquals(1 + 1, 3) // Fix me, please!
+   * 72:      assertEquals(1 + 2, 3) // Fix me, please!
    * 73:  }
    * values are not the same
    * => Obtained
@@ -57,8 +57,8 @@ class ListsSuite extends munit.FunSuite:
    * when writing tests.
    */
   test("details why one plus one is not three (0pts)") {
-    assertEquals(1 + 1, 3) // Fix me, please!
-  }
+    assertEquals(1 + 1, 2) // Fix me, please!
+  } //fixed
 
   /**
    * Exceptional behavior of a methods can be tested using a try/catch
@@ -100,11 +100,11 @@ class ListsSuite extends munit.FunSuite:
    */
   test("sum of a few numbers (10pts)") {
     assert(sum(List(1,2,0)) == 3)
-  }
+  } // cleared
 
   test("max of a few numbers (10pts)") {
     assert(max(List(3, 7, 2)) == 7)
-  }
+  } // cleared
 
 
 
