@@ -1,4 +1,4 @@
-package funsets
+  package funsets
 
 /**
  * This class is a test suite for the methods in object FunSets.
